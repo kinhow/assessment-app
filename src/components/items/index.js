@@ -2,7 +2,7 @@ import React from 'react';
 import { media } from '../../utils';
 import { Skeleton } from '@material-ui/lab';
 import PropTypes from 'prop-types';
-import upperFirst from 'lodash/upperFirst';
+import lowerFirst from 'lodash/lowerFirst';
 import Tag from '../../components/tag';
 import Image from '../../components/image';
 import styles from './items.module.scss';
@@ -29,8 +29,8 @@ const Items = (props) => {
   }
 
   if (data) {
-    let typeFirst = upperFirst(data.type1),
-      typeSecond = upperFirst(data.type2);
+    let typeFirst = lowerFirst(data.type1),
+      typeSecond = lowerFirst(data.type2);
 
     return (
       <div className={styles.item}>
