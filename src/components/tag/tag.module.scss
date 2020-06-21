@@ -1,0 +1,96 @@
+@import "../../scss/components/variable";
+
+.tag {
+  @extend %valign;
+  border-radius: 50px;
+  margin: 5px;
+
+  &.bug {
+    background-color: #9cb820;
+  }
+
+  &.grass {
+    background-color: #22c02a;
+  }
+
+  &.dragon {
+    background-color: #7038f8;
+  }
+
+  &.fairy {
+    background-color: #f09ad9;
+  }
+
+  &.fire {
+    background-color: #f08030;
+  }
+
+  &.ghost {
+    background-color: #705898;
+  }
+
+  &.ground {
+    background-color: #e0b668;
+  }
+
+  &.normal {
+    background-color: #a8a8a8;
+  }
+
+  &.psychic {
+    background-color: #f85888;
+  }
+
+  &.steel {
+    background-color: #6d8f9c;
+  }
+
+  &.dark {
+    background-color: #504843;
+  }
+
+  &.electric {
+    background-color: #f8d030;
+  }
+
+  &.fighting {
+    background-color: #c03028;
+  }
+
+  &.flying {
+    background-color: #9096f0;
+  }
+
+  &.ice {
+    background-color: #98d8d8;
+  }
+
+  &.poison {
+    background-color: #a040a0;
+  }
+
+  &.rock {
+    background-color: #b8a038;
+  }
+
+  &.water {
+    background-color: #6890f0;
+  }
+
+  .icon {
+    display: flex;
+    width: 30px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: $primary-text-color;
+  }
+
+  .typeName {
+    color: $primary-text-color;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding: 0 10px;
+    width: 80px;
+  }
+}

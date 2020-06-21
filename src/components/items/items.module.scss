@@ -1,0 +1,36 @@
+@import "../../scss/components/variable";
+
+.item {
+  width: 25%;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 950px) {
+    width: 40%;
+  }
+
+  @media (max-width: 460px) {
+    width: 90%;
+  }
+
+  .image {
+    width: 215px;
+    margin: 0 auto;
+  }
+
+  .name {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 20px;
+  }
+
+  .types {
+    @extend %valign;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+}
